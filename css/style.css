@@ -4,7 +4,6 @@ html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  margin: auto;
 }
 
 .headline-title p {
@@ -19,7 +18,22 @@ html, body {
   font-size: 35px;
   font-weight: 700;
 }
+@media (min-width: 576px) {
+  .headline-title h3 {
+    font-size: 25px;
+  }
+}
 @media (min-width: 768px) {
+  .headline-title h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 996px) {
+  .headline-title h3 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1200px) {
   .headline-title h3 {
     font-size: 45px;
   }
@@ -428,9 +442,6 @@ header .container .btn-yellow {
   margin-bottom: 15px;
 }
 
-.about {
-  padding: 10px;
-}
 @media (min-width: 576px) {
   .about {
     padding: 40px;
@@ -442,29 +453,29 @@ header .container .btn-yellow {
   gap: 20px;
   position: relative;
 }
-@media (min-width: 576px) {
-  .about .container {
-    padding: 10px;
-  }
-}
 @media (min-width: 1400px) {
   .about .container {
     gap: 200px;
   }
 }
-.about .container img {
+.about .container .samantha {
   display: none;
 }
 @media (min-width: 996px) {
-  .about .container img {
+  .about .container .samantha {
     display: flex;
     padding-left: 30px;
+    height: 100%;
+    width: auto;
   }
 }
 .about .container aside {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.about .container aside p {
+  line-height: 2;
 }
 .about .container .blue-box {
   font-family: "Inter", sans-serif;
@@ -490,10 +501,28 @@ header .container .btn-yellow {
   color: #F94D1C;
   font-size: 16px;
 }
+.about .container .whiteline-left-about {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 35px;
+}
+@media (min-width: 996px) {
+  .about .container .whiteline-left-about {
+    display: block;
+  }
+}
 .about .container .play-button {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
   padding-top: 10px;
+  align-items: start;
+}
+@media (min-width: 1200px) {
+  .about .container .play-button {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 .about .container .play-button .play {
   display: flex;
@@ -725,6 +754,7 @@ header .container .btn-yellow {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .clients-say .container .testimonials {
   display: flex;
@@ -738,6 +768,9 @@ header .container .btn-yellow {
     flex-direction: row;
     gap: 80px;
   }
+}
+.clients-say .container .testimonials aside {
+  text-align: left;
 }
 .clients-say .container .testimonials aside .star {
   padding-bottom: 20px;
@@ -770,8 +803,6 @@ header .container .btn-yellow {
 .articles-and-news .container .top {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 30px;
 }
 @media (min-width: 996px) {
   .articles-and-news .container .top {
@@ -792,9 +823,6 @@ header .container .btn-yellow {
     flex-direction: row;
   }
 }
-.articles-and-news .container .news p {
-  margin: 0px;
-}
 .articles-and-news .container .news article {
   position: relative;
   display: flex;
@@ -810,6 +838,60 @@ header .container .btn-yellow {
   left: 20px;
   padding: 10px 14px;
   background-color: #F0D082;
+}
+
+.newsletter {
+  position: relative;
+  background-color: #F0EFE9;
+  padding-top: 100px;
+  padding-bottom: 100 px;
+  z-index: 0;
+}
+.newsletter .blackline-right {
+  display: none;
+}
+@media (min-width: 576px) {
+  .newsletter .blackline-right {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    z-index: -1;
+  }
+}
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (min-width: 576px) {
+  .newsletter .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.newsletter .container h2 {
+  font-family: "DM sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.newsletter .container form input {
+  padding: 10px 24px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+}
+@media (min-width: 576px) {
+  .newsletter .container form input {
+    margin-right: 20px;
+  }
 }
 
 footer {
@@ -968,7 +1050,7 @@ footer .footer-end .copyright i:hover {
   padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 @media (min-width: 1200px) {
@@ -979,10 +1061,8 @@ footer .footer-end .copyright i:hover {
 .cards .container aside {
   border: 1px solid #F4F4F4;
   display: flex;
-  justify-content: center;
-  justify-content: space-around;
   gap: 20px;
-  padding: 50px;
+  padding: 50px 85px;
 }
 .cards .container aside .circle {
   height: 60px;
@@ -994,10 +1074,6 @@ footer .footer-end .copyright i:hover {
   align-items: center;
   color: white;
   font-size: 20px;
-}
-.cards .container aside h5 {
-  font-family: "DM sans", sans-serif;
-  font-size: 22px;
 }
 .cards .container aside p {
   font-size: 18px;
