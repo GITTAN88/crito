@@ -14,7 +14,7 @@
         <header>
             <div class="container">
 
-                <div class="menu-bars"><button class="menu-bars"><i class="fa-solid fa-bars-staggered "></i></button></div>
+                <button class="menu-bars"><i class="fa-solid fa-bars-staggered "></i></button>
                 <div class="logotype"><a class="crito-logo" href="index.html"><img src="images/logo.svg" alt="crito logotype"></a></div>
                 
                 <div class="contact-and-socialmedia">
@@ -42,17 +42,16 @@
                     </nav>
                 </div>
 
-                <a class="btn-yellow">Login<i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                <a href="#" class="btn-yellow">Login<i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
 
             </div>
         </header>
         <main>
             <section class="showcase contactpage">
                 
-                <img class="whiteline-left" src="images/whiteline-left.svg" alt="">
+                <img class="lines" src="images/whiteline-left-showcase.svg" alt="">
                 
                 <div class="container">
-                    
                     <div class="content"> 
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -66,8 +65,9 @@
             <section class="cards">
 
                 <div class="container">
-                    
                     <aside>
+                        
+
                         <div class="circle"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
                             <h4>Visit us</h4>
@@ -76,6 +76,7 @@
                     </aside>
                     <aside>
                         <div class="circle"><i class="fa-solid fa-phone-volume"></i></div>
+        
                         <div>
                             <h4>Call us</h4>
                             <p>+46 (8) 121 470 50 <br> +46 (8) 121 470 51</p>
@@ -91,20 +92,21 @@
                 </div>
 
             </section>
+
             <section class="contact-form">
                 <div class="container">
                     
                     <h3>Leave us a message <br>for any information.</h3>
 
-                    <form method="post">
+                    <form id="contact-form" method="post">
 
-                        <input type="text" placeholder="Name*">
-                        <input type="text" placeholder="Email*">
-                        <input class="message" type="text" placeholder="Your Message*">
+                        <input class="input" id="name" type="text" placeholder="Name*">
+                        <input class="input" id="email" type="text" placeholder="Email*">
+                        <textarea id="message" class="input" type="text" placeholder="Your Message*"></textarea>
 
                     </form>
 
-                    <a href="#" class="btn-yellow">Send Message <i class="fa-sharp fa-regular fa-arrow-up-right"></i></a>
+                    <button class="btn-yellow">Send Message<i class="fa-sharp fa-regular fa-arrow-up-right"></i></button>
                 </div>
             </section>
             <section class="map">
@@ -114,11 +116,11 @@
         </section>
         </main>
         <footer>
-            <div class="upper-footer">
-                <img class="whiteline-right" src="images/whiteline-right.svg" alt="White lines">
+            <div class="first-footer">
+                <img class="lines" src="images/whiteline-right.svg" alt="White lines">
                 <div class="container">
                     <div id="logo">
-                        <img src="images/Logo-white.png" alt="">
+                        <a href="index.html"><img src="images/Logo-white.png" alt=""></a>
                         <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
                     </div>
                 
@@ -155,7 +157,7 @@
 
             </div>
 
-            <div class="footer-end">
+            <div class="second-footer">
                 
                     <div class="container copyright">
                         <div>
