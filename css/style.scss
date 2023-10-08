@@ -213,7 +213,6 @@ header {
                 }
 
                 @media (min-width: 996px) {display:none;}
-                
         }
 
         .logotype {
@@ -613,6 +612,10 @@ header {
         flex-direction: column;
         gap:20px;
 
+        .headline-title {
+            max-width:500px;
+        }
+
         .service-boxes {
             display:flex;
             flex-direction:column;
@@ -836,12 +839,6 @@ header {
                     @media (min-width:996px) {padding-bottom:30px;}
             }
         }
-           
-        .dots {
-            display:flex;
-            justify-content: center;
-            margin:20px;
-        }
     }
 }
 
@@ -924,12 +921,6 @@ header {
             @media (min-width:996px) {padding:30px;}
             @media (min-width:1200px) {padding:120px 0px;}
 
-        .dots {
-            display: flex;
-            justify-content: center;
-            margin-top:40px;
-            }
-
         .news {
             display: flex;
             padding-top:20px;
@@ -951,6 +942,7 @@ header {
                 
                 @media (min-width: 1200px) {
                     gap:15px;
+                    margin-bottom:40px;
                 }
 
                 img {
@@ -1122,7 +1114,7 @@ footer {
             margin-bottom: 30px;
         }
 
-        .links {
+        aside {
             text-align: left;
 
             @media (min-width:768px) {
@@ -1217,8 +1209,6 @@ footer {
             justify-content:center;
             flex-direction: column;
 
-
-
             h1 {
                 font-size: 56px;
             }
@@ -1292,6 +1282,7 @@ footer {
             
             p {
                 font-size: 18px;
+                margin:0px;
             }
         }
     }
@@ -1299,7 +1290,7 @@ footer {
 
 .contact-form {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 50px 20px;
 
     .container {
         background-color: #F0EFE9;

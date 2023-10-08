@@ -681,6 +681,9 @@ header .container .btn-yellow {
   flex-direction: column;
   gap: 20px;
 }
+.our-services .container .headline-title {
+  max-width: 500px;
+}
 .our-services .container .service-boxes {
   display: flex;
   flex-direction: column;
@@ -905,11 +908,6 @@ header .container .btn-yellow {
     padding-bottom: 30px;
   }
 }
-.team-members .container .dots {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
 
 .testimonial {
   background-color: #F0D082;
@@ -994,11 +992,6 @@ header .container .btn-yellow {
     padding: 120px 0px;
   }
 }
-.articles-and-news .container .dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
 .articles-and-news .container .news {
   display: flex;
   padding-top: 20px;
@@ -1026,6 +1019,7 @@ header .container .btn-yellow {
 @media (min-width: 1200px) {
   .articles-and-news .container .news article {
     gap: 15px;
+    margin-bottom: 40px;
   }
 }
 .articles-and-news .container .news article img {
@@ -1200,35 +1194,35 @@ footer .container #logo {
 footer .container img {
   margin-bottom: 30px;
 }
-footer .container .links {
+footer .container aside {
   text-align: left;
 }
 @media (min-width: 768px) {
-  footer .container .links {
+  footer .container aside {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
   }
 }
 @media (min-width: 996px) {
-  footer .container .links {
+  footer .container aside {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 0px;
   }
 }
-footer .container .links h4 {
+footer .container aside h4 {
   margin-bottom: 30px;
   color: white;
   font-size: 22px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  footer .container .links h4 {
+  footer .container aside h4 {
     text-align: left;
   }
 }
-footer .container .links a {
+footer .container aside a {
   display: none;
   text-decoration: none;
   cursor: pointer;
@@ -1236,11 +1230,11 @@ footer .container .links a {
   margin-bottom: 13px;
 }
 @media (min-width: 768px) {
-  footer .container .links a {
+  footer .container aside a {
     display: flex;
   }
 }
-footer .container .links a:hover {
+footer .container aside a:hover {
   color: white;
 }
 footer .second-footer {
@@ -1351,11 +1345,12 @@ footer .second-footer .copyright i:hover {
 }
 .cards .container aside p {
   font-size: 18px;
+  margin: 0px;
 }
 
 .contact-form {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 50px 20px;
 }
 .contact-form .container {
   background-color: #F0EFE9;
