@@ -133,14 +133,13 @@ h4 {
     font-weight: 700;
 }
 
+//general settings on background-lines
 .lines {
     position: absolute;
     max-width:100%;
     height:auto;
       
-    @media (min-width:996px) {
-    width:fit-content;
-    }
+    @media (min-width:996px) {width:fit-content;}
     
 }
 
@@ -605,6 +604,7 @@ header {
     .lines {
         bottom:0px;
         right:0px;
+        z-index: 0;
     }
 
     .container {
@@ -676,6 +676,11 @@ header {
                 }
             }
         }
+
+        .btn-trans {
+            z-index: 1;
+        }
+
     }
 }
 
@@ -1256,17 +1261,11 @@ footer {
             gap: 20px;
             padding: 30px 65px;
 
-            @media (min-width:576px) {
-                padding:50px 85px;
-            }
+            @media (min-width:576px) {padding:50px 85px;}
 
-            @media (min-width:1200px) {
-                padding:50px;
-            }
+            @media (min-width:1200px) {padding:50px;}
 
-            @media (min-width:1400px) {
-                padding:50px 85px;
-            }
+            @media (min-width:1400px) {padding:50px 85px;}
 
             .circle {
                 width: 60px;
@@ -1306,10 +1305,7 @@ footer {
             font-weight: 700;
             text-align: center;
 
-            @media (min-width: 576px) {
-                font-size: 45px;
-            }
-        }
+            @media (min-width: 576px) {font-size: 45px;}}
         
         form {
             padding: 20px;

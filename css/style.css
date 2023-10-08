@@ -675,6 +675,7 @@ header .container .btn-yellow {
 .our-services .lines {
   bottom: 0px;
   right: 0px;
+  z-index: 0;
 }
 .our-services .container {
   display: flex;
@@ -740,6 +741,9 @@ header .container .btn-yellow {
   border: 1px solid #191919;
   background-color: #191919;
   color: white;
+}
+.our-services .container .btn-trans {
+  z-index: 1;
 }
 
 .why-choose-us {
